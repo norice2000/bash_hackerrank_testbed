@@ -37,3 +37,12 @@
 # .
 # .
 # 99  
+# to use arithmetic expression in bash
+# $((expression))
+# $(( n1+n2 ))
+for i in {1..99}; 
+do
+    if (( i % 2 != 0 )); then
+        echo $i
+    fi
+done
